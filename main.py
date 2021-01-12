@@ -17,6 +17,7 @@ choice = input('''
     - for substraction
     * for multiplication
     / for division
+    ^ for power of
 ''')
 
 num_1 = int(input('Enter your first number: '))
@@ -30,5 +31,7 @@ elif choice == '*':
     print(multiply(num_1, num_2))
 elif choice == '/':
     print(divde(num_1, num_2))
+elif choice == '^':
+    print(pow(num_1, num_2))
 else:
     print('Enter a valid operator, please run the program again')

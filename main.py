@@ -11,6 +11,9 @@ def multiply(x, y):
 def divde(x, y):
     return x / y
 
+def percentage(x, y):
+    return (x/y) * 100
+    
 choice = input('''
     please select type of operation you want to perform:
     + for addition
@@ -31,6 +34,8 @@ elif choice == '*':
     print(multiply(num_1, num_2))
 elif choice == '/':
     print(divde(num_1, num_2))
+elif choice == '%':
+    print(percentage(num_1, num_2))
 elif choice == '^':
     print(pow(num_1, num_2))
 else:
